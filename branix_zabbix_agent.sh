@@ -1,4 +1,5 @@
 #!/bin/bash
+# chmod +x branix_zabbix_agent.sh && ./branix_zabbix_agent.sh
 # Usage example: ./branix_zabbix_agent.sh 
 
 #################################################### CONFIGURATION ###
@@ -121,6 +122,7 @@ sleep 1s
 sudo apt update
 sudo apt -y install zabbix-agent
 service zabbix-agent restart
+#sudo apt -y install software-properties-common curl wget nano vim rpl sed zip unzip openssl expect dirmngr apt-transport-https lsb-release gnupg2 ca-certificates dnsutils dos2unix zsh htop 
 
 
 
