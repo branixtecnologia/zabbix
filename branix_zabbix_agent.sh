@@ -125,4 +125,25 @@ service zabbix-agent restart
 #sudo apt -y install software-properties-common curl wget nano vim rpl sed zip unzip openssl expect dirmngr apt-transport-https lsb-release gnupg2 ca-certificates dnsutils dos2unix zsh htop 
 
 
+# Firewall
+clear
+clear
+echo "${bggreen}${black}${bold}"
+echo "Firewall settings..."
+echo "${reset}"
+sleep 1s
+
+sudo ufw allow 10050/tcp
+
+
+# BRANIX Server
+clear
+clear
+echo "${bggreen}${black}${bold}"
+echo "BRANIX settings..."
+echo "${reset}"
+sleep 1s
+
+rpl -i -w "Server=127.0.0.1" "Server=zabbix.branix.com.br" /etc/zabbix/zabbix_agentd.conf  
+rpl -i -w "ServerActive=127.0.0.1" "ServerActive=zabbix.branix.com.br" /etc/zabbix/zabbix_agentd.conf
 
