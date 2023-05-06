@@ -146,6 +146,7 @@ sleep 1s
 
 rpl -i -w "Server=127.0.0.1" "Server=zabbix.branix.com.br" /etc/zabbix/zabbix_agentd.conf  
 rpl -i -w "ServerActive=127.0.0.1" "ServerActive=zabbix.branix.com.br" /etc/zabbix/zabbix_agentd.conf
+rpl -i -w "# Hostname=" "Hostname=`hostname`" /etc/zabbix/zabbix_agentd.conf
 
 systemctl restart zabbix-agent
 
