@@ -12,6 +12,6 @@ BRANIX Tecnologia
 Monitoring server
 
 ```
- wget https://raw.githubusercontent.com/branixtecnologia/zabbix/main/branix_zabbix_agent.sh; chmod +x branix_zabbix_agent.sh; ./branix_zabbix_agent.sh
+rm -rf branix_zabbix_agent.sh; wget https://raw.githubusercontent.com/branixtecnologia/zabbix/main/branix_zabbix_agent.sh; chmod +x branix_zabbix_agent.sh; ./branix_zabbix_agent.sh
  
 ```
