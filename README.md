@@ -1,4 +1,4 @@
-BRANIX Tecnologia
+BRANIX
 ======
 
 # Table of contents
